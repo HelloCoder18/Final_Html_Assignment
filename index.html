@@ -2,30 +2,143 @@
 <html lang="en">
 <head>
     <title>SignUp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3fccd0a53b.js" crossorigin="anonymous"></script>
     <style>
-        .container{
+        html{
+                scroll-behavior: smooth;
+            }
+            *{
+                margin: 0%;
+                padding: 0%;
+            }
+
+           .nav-link a,.copyright a{
+                text-decoration: none;
+                color: white;
+
+            }
+            a:hover{
+                text-decoration: underline yellow;
+            }
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                background-color: black;
+                
+            }
+            .nav-logo{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+            .navbar h1{
+                color: #ffea00;
+                padding: 2rem;
+            }
+            h1:hover{
+                cursor: pointer;
+                
+            }
+            h2{
+                
+                text-align: center;
+                text-decoration: underline;
+                margin:40px 0px;
+            }
+            h4{
+                float: right;
+                margin: 0px 30px 0px 0px;
+            }
+            h5
+            {
+                text-align: center;
+                font-size: 40px;
+                margin: 1px 0px 40px 0px;
+                text-decoration: underline;
+                color: white;
+            }
+            h6{
+                text-align: center;
+                margin-top: 10px;
+                color:white;
+            }
+            p{
+                font-size: 20px;
+                margin: 10px 0px 30px 0px;
+            }
+            .logo{
+                height: 100px;
+                width: 100px;
+            }
+            .nav-link{
+                display: flex;    
+            }
+            .nav-link li{
             
-            width: 25%;
+            list-style: none;
+                
+            padding: 39px;
+            
+            }
+
+        .container{
+           
+           background-color: grey; 
         }
         .signup{
-
-            border:2px solid gray;
+            margin-left: 30%;
+            padding: 10%;
+            text-align: center;
+            width: 200px;
         }
-        .signup button{
+        button{
             margin: 10px 40%;
+            padding: 8px;
         }
-        a{
-            text-decoration: none;
+        button:hover{
+            background-color: #ffea00;
+            transform: scale(1.02);
+            transition: 0.3s;
+        }
+        button a{
             color: black;
-            
+            box-shadow: 1px 1px gray;
+            text-decoration: none;
         }
         p{
             text-align: center;
             font-size: 10px;
         }
+
+            .copyright
+            {
+            background-color: black;
+            }
+            .footer-link{
+            color: white;
+            display: flex;
+            justify-content: space-evenly;
+            }
+       
     </style>
 </head>
 <body>
+    <header class="navbar">
+        <div class="nav-logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKOWzMFW0UUxA1O6Xc7gdUEWIqe05_vPdpNqRGUT4EFljioDbMMY8rnhGK0TpSU3CcQqU&usqp=CAU" alt="logo" class="logo">
+        
+        </div>
+        <h1>The Gold GYM</h1>
+        <nav>
+            <ul class="nav-link">
+                <li><a href="/resources/home.html">Home</a></li>
+                <li><a href="/resources/nutrition.html">Nutrition</a></li>
+                <li><a href="/resources/Blog.html">Blog</a></li>
+                <li><a href="/index.html">SignUp</a></li>
+                </ul>
+        </nav>
+</header> 
     <div class="container">
         <div class="signup">
     <form>
@@ -51,5 +164,16 @@
       <p>(Click on SignUp to visit Home Page)</p>
     </div>
 </div>
+<footer class="copyright">
+    <h5 >Thanks for visiting</h5>
+            <nav class="footer-link">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                <a href="https://www.twitter.com"  target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                <a href="https://www.instagram.com"target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="https://www.snapchat.com" target="_blank"><i class="fa-brands fa-snapchat"></i> snapchat</a>
+            </nav>
+
+<h6><i class="fa-regular fa-copyright"></i> 2023 SharmaJi, Inc</h6>
+</footer>
 </body>
 </html>
